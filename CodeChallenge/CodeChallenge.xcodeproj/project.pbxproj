@@ -11,7 +11,6 @@
 		5C282983285EBC8300AF5560 /* LogoIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C282982285EBC8300AF5560 /* LogoIBViewController.swift */; };
 		5C282985285EBF1000AF5560 /* LogoUIKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C282984285EBF1000AF5560 /* LogoUIKViewController.swift */; };
 		5C282987285ECC6100AF5560 /* LogoSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C282986285ECC6100AF5560 /* LogoSwiftView.swift */; };
-		5C28298B285ED73B00AF5560 /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28298A285ED73B00AF5560 /* SwiftUIViewController.swift */; };
 		5C28298D285EDCE600AF5560 /* ColorSelectSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28298C285EDCE600AF5560 /* ColorSelectSwiftUIView.swift */; };
 		5C28298F285EE6AE00AF5560 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C28298E285EE6AE00AF5560 /* .gitignore */; };
 		5C3C04DA285CE20B00AE00DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C04D9285CE20B00AE00DC /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 		5C282982285EBC8300AF5560 /* LogoIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoIBViewController.swift; sourceTree = "<group>"; };
 		5C282984285EBF1000AF5560 /* LogoUIKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoUIKViewController.swift; sourceTree = "<group>"; };
 		5C282986285ECC6100AF5560 /* LogoSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoSwiftView.swift; sourceTree = "<group>"; };
-		5C28298A285ED73B00AF5560 /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
 		5C28298C285EDCE600AF5560 /* ColorSelectSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectSwiftUIView.swift; sourceTree = "<group>"; };
 		5C28298E285EE6AE00AF5560 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		5C282991285EE9EE00AF5560 /* CodeChallengePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodeChallengePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -69,7 +67,6 @@
 				5C282982285EBC8300AF5560 /* LogoIBViewController.swift */,
 				5C282984285EBF1000AF5560 /* LogoUIKViewController.swift */,
 				5C282986285ECC6100AF5560 /* LogoSwiftView.swift */,
-				5C28298A285ED73B00AF5560 /* SwiftUIViewController.swift */,
 			);
 			path = "Challenge-5-6";
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 				5C3C04DE285CE20B00AE00DC /* ViewController.swift in Sources */,
 				5C28298D285EDCE600AF5560 /* ColorSelectSwiftUIView.swift in Sources */,
 				5C282985285EBF1000AF5560 /* LogoUIKViewController.swift in Sources */,
-				5C28298B285ED73B00AF5560 /* SwiftUIViewController.swift in Sources */,
 				5C282983285EBC8300AF5560 /* LogoIBViewController.swift in Sources */,
 				5C3C04DA285CE20B00AE00DC /* AppDelegate.swift in Sources */,
 				5C3C04EF285CF5D300AE00DC /* ApiCall.swift in Sources */,
