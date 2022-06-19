@@ -31,6 +31,7 @@
 		5C28298A285ED73B00AF5560 /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
 		5C28298C285EDCE600AF5560 /* ColorSelectSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectSwiftUIView.swift; sourceTree = "<group>"; };
 		5C28298E285EE6AE00AF5560 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		5C282991285EE9EE00AF5560 /* CodeChallengePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodeChallengePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5C3C04D6285CE20B00AE00DC /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3C04D9285CE20B00AE00DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C3C04DB285CE20B00AE00DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +74,14 @@
 			path = "Challenge-5-6";
 			sourceTree = "<group>";
 		};
+		5C282990285EE9AE00AF5560 /* Challenge-3-4-7 */ = {
+			isa = PBXGroup;
+			children = (
+				5C282991285EE9EE00AF5560 /* CodeChallengePlayground.playground */,
+			);
+			path = "Challenge-3-4-7";
+			sourceTree = "<group>";
+		};
 		5C3C04CD285CE20B00AE00DC = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +102,7 @@
 		5C3C04D8285CE20B00AE00DC /* CodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				5C282990285EE9AE00AF5560 /* Challenge-3-4-7 */,
 				5C282981285EBC4D00AF5560 /* Challenge-5-6 */,
 				5C28297D285E555100AF5560 /* Challenge-2 */,
 				5C3C04ED285CF5B000AE00DC /* Challenge-1 */,
