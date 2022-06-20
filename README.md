@@ -6,6 +6,7 @@ This repository contains some code example of latest iOS and Swift.
 
 1. [System Requirements](#system-requirements)
 1. [How to run](#how-to-run)
+1. [Index View/Screen](#index-view--screen-viewcontrollerswift)
 1. [Challenge 1](#challenge-1)
 1. [Challenge 2](#challenge-2)
 1. [Challenge 3](#challenge-3)
@@ -38,6 +39,30 @@ Most of the code examples are implemented as part of Single View UIKit based iOS
 
 The initial view controller (ViewController.swift) is used as index page to invoke different code examples
 
+### Index View / Screen (ViewController.swift)
+
+The following button items are presenting and invoking different challenge results
+
+- `API call with Closure` - _Challenge - 1_
+
+- `API call with Async` - _Challenge - 1_
+
+- `UIKit Color Selector` - _Challenge - 2_
+
+- `SwiftUI Color Selector` - _Challenge - 2_
+
+- `UIKit IB Logo` - _Challenge - 5_
+
+- `UIKit Logo` - _Challenge - 5_
+
+- `SwiftUI Logo` - _Challenge - 5_
+
+- `Logo View Segue` - _Challenge - 6_
+
+- `Swift UI Logo VC` - _Challenge - 6_
+
+- `Swift UI Logo Modal` - _Challenge - 6_
+
 ![IndexView](/assets/IndexView.png)
 
 ### Challenge 1
@@ -57,8 +82,6 @@ The code example is implemented in `Challenge-1/ApiCall.swift` and invoked
 in `ViewController.swift` by clicking
 
 - `API call with Closure` (Closure based)
-
-- `API call with Async` (Async / await pattern)
 
 ```swift
 @IBAction func apiAction(_ sender: Any) {
@@ -84,6 +107,8 @@ in `ViewController.swift` by clicking
         }
     }
 ```
+
+- `API call with Async` (Async / await pattern)
 
 ```swift
 @IBAction func apiActionWithAsync(_ sender: Any) {
@@ -128,7 +153,7 @@ Create a segmented controller with six color options.  As the different segments
 Please provide two different approaches.
 
 - UIKit
-- SwiftUI
+
 
 ```
 
@@ -139,11 +164,17 @@ The UIKit version of the solution is implemented in `ColorSelectionViewControlle
 @IBAction func showUIKitColorSelector(_ sender: Any) {}
 ```
 
+![Challenge-2-UIK](/assets/Challenge-2-UIK.png)
+
+- SwiftUI
+
 SwiftUI version of code example is implemented in `ColorSelectSwiftUIView.swift` and user can view this screen through `ViewController.swift` / `SwiftUI Color Select` button
 
 ```swift
     @IBAction func showSwiftUIColorSelectView(_ sender: Any) {}
 ```
+
+![Challenge-2-SW](/assets//Challenge-2-SwiftUI.png)
 
 ### Challenge 3
 
@@ -406,8 +437,10 @@ globalPublisher.publish(event: "test", info: "my event - New")
 
 ![Challenge-7](/assets/Challenge-7.png)
 
-## Known issue and conclusion
+## Known issues and conclusion
 
 - Application is not tested in iOS device.
 
 - No Unit or UI tests are added
+
+- Due to lack of time some variable names are not perfect.
