@@ -331,7 +331,8 @@ The code example is implemented in `Challenge-3-4-7/CodeChallengePlayground.play
 typealias Event = String
 // Event param tuple
 typealias EventData = (event: Event, info: Any?)
-// Event callback closure type
+// Event callba
+ck closure type
 typealias EventHandler = (_ event: EventData) -> Void
 
 // Class ref to store event handler
@@ -404,3 +405,9 @@ globalPublisher.publish(event: "test", info: "my event - New")
 ```
 
 ![Challenge-7](/assets/Challenge-7.png)
+
+## Known issue and conclusion
+
+- Application is not tested in iOS device.
+
+- No Unit or UI tests are added

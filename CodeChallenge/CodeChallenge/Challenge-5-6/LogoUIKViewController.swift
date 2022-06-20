@@ -38,6 +38,7 @@ class LogoUIKViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Adding image view if not already added
         if self.view.viewWithTag(imageViewTag) == nil {
             self.createImageView()
         }
