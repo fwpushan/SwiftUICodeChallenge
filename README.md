@@ -312,11 +312,11 @@ Please provide two different approaches.
 
 - Segue is view presentation technique for Storyboard. Here, we implemented a programmatic invocation of storyboard segue.
 
-- `LogoUIKViewController.swift` rendering is developed programmatically, hence that is presented.
+- `LogoUIKViewController.swift` view rendering/layout segment is developed programmatically without Interface builder or StoryBoard, hence that is presented.
 
 - `LogoSwiftUIViewController.swift` (a programmatic subclass of `UIHostingController`) is presenting storyboard `Hosting` view-controller object. Here, we invoke segue programmatically.
 
-- For `SwiftUI` view, we created a programmatic modal presentation with `LogoSwiftViewModal.swift` with dismiss action.
+- For `SwiftUI` view, we created a programmatic modal presentation with `LogoSwiftViewModal.swift` with dismiss action (No Interface builder or Storyboard).
 
 #### UIKit Version
 
