@@ -61,11 +61,63 @@ in `ViewController.swift` by clicking
 - `API call with Async` (Async / await pattern)
 
 ```swift
-@IBAction func apiAction(_ sender: Any) {}
+@IBAction func apiAction(_ sender: Any) {
+        self.ipClosureActionButton?.alpha = 0.3;
+        self.ipClosureActionActivity?.isHidden = false;
+        self.apiCaller.getIP { result in
+            DispatchQueue.main.async {
+                self.ipClosureActionButton?.alpha = 1.0;
+                self.ipClosureActionActivity?.isHidden = true;
+            }
+            switch result {
+            case .success(let ip):
+                print("Closure IP: \(ip)")
+                DispatchQueue.main.async {
+                    self.ipLabel?.text = "IP Address (closure): \(ip)"
+                }
+            case .failure(let err):
+                print("Closure API error: \(err)")
+                DispatchQueue.main.async {
+                    self.ipLabel?.text = "IP detection fail with error  (closure): \(err)"
+                }
+            }
+        }
+    }
 ```
 
 ```swift
-@IBAction func apiActionWithAsync(_ sender: Any) {}
+@IBAction func apiActionWithAsync(_ sender: Any) {
+        self.asyncClosureActionButton?.alpha = 0.3
+        self.asyncClosureActionActivity?.isHidden = false;
+        do {
+            Task.init {
+                do {
+                    let result = try await self.apiCaller.getIp();
+                    DispatchQueue.main.async {
+                        self.asyncClosureActionButton?.alpha = 1.0
+                        self.asyncClosureActionActivity?.isHidden = true;
+                    }
+                    switch result {
+                    case .success(let ip):
+                        print("Async IP: \(ip)")
+                        DispatchQueue.main.async {
+                            self.ipLabel?.text = "IP Address (async): \(ip)"
+                        }
+                    case .failure(let err):
+                        print("Async error: \(err)")
+                        DispatchQueue.main.async {
+                            self.ipLabel?.text = "IP detection fail with error (async): \(err)"
+                        }
+                    }
+                } catch let error {
+                    print("Api call fail with error \(error)")
+                    DispatchQueue.main.async {
+                        self.ipLabel?.text = "IP detection fail with error (async): \(error)"
+                    }
+                }
+            }
+        }
+    }
 ```
 
 ### Challenge 2
@@ -225,6 +277,16 @@ Please provide two different approaches.
 - SwiftUI
 ```
 
+#### Assumption and decisions
+
+- Segue is view presentation technique for Storyboard. Here, we implemented a programmatic invocation of storyboard segue.
+
+- `LogoUIKViewController.swift` rendering is developed programmatically, hence that is presented.
+
+- `LogoSwiftUIViewController.swift` (a programmatic subclass of `UIHostingController`) is presenting storyboard `Hosting` view-controller object. Here, we invoke segue programmatically.
+
+- For `SwiftUI` view, we created a programmatic modal presentation with `LogoSwiftViewModal.swift` with dismiss action.
+
 #### UIKit Version
 
 In the `ViewController.swift` on touch up of `Logo View Segue` action, the previously created `LogoUIKViewController.swift` controller is presented programmatically.
@@ -238,12 +300,19 @@ In the `ViewController.swift` on touch up of `Logo View Segue` action, the previ
 
 #### SwiftUI Version
 
-In the `ViewController.swift` on touch up of `SwiftUI Logo` action, the previously created `LogoUIKViewController.swift` controller is presented programmatically.
+In the `ViewController.swift` on touch up of `SwiftUI Logo VC`  action is presenting `LogoSwiftUIViewController.swift` view by programmatically invoking segue in **Main.storyboard**
 
 ```swift
-@IBAction func showSwiftUILogoViewController(_ sender: Any) {
-        let logoView: ContentView = ContentView()
-        self.navigationController?.pushViewController(UIHostingController(rootView: logoView), animated: true)
+@IBAction func showLogoSwiftVC(_ sender: Any) {
+        self.performSegue(withIdentifier: "showSwiftUILogoVC", sender: self)
+    }
+```
+
+and `SwiftUI Logo Modal` is presenting `LogoSwiftViewModal.swift` in modal transition.
+
+```swift
+@IBAction func showLogoSwiftVCInModal(_ sender: Any) {
+        self.present(UIHostingController(rootView: LogoSwiftViewModal(container: self)), animated: true)
     }
 ```
 

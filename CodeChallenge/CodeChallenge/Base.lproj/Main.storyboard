@@ -38,8 +38,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Address Not Detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT6-tZ-lQQ">
+                                <rect key="frame" x="10" y="120" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O62-fA-8xS">
-                                <rect key="frame" x="125.5" y="188" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="178" width="163" height="34"/>
                                 <state key="normal" title="API call with Closure">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -47,8 +53,12 @@
                                     <action selector="apiAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3J-R1-cJ1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qvL-Mp-qNQ">
+                                <rect key="frame" x="197" y="185" width="20" height="20"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPs-kb-ycH">
-                                <rect key="frame" x="125.5" y="232" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="222" width="163" height="34"/>
                                 <state key="normal" title="API call with Async">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -56,8 +66,12 @@
                                     <action selector="apiActionWithAsync:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWB-K3-5I5"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xnn-af-sOO">
+                                <rect key="frame" x="197" y="229" width="20" height="20"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-md-CCh">
-                                <rect key="frame" x="125.5" y="276" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="266" width="163" height="34"/>
                                 <state key="normal" title="UIKit Color Selector">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -66,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-HJ-gze">
-                                <rect key="frame" x="125.5" y="320" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="310" width="163" height="34"/>
                                 <state key="normal" title="UIKit IB Logo">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -75,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC7-Qw-Gnp">
-                                <rect key="frame" x="125.5" y="362" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="352" width="163" height="34"/>
                                 <state key="normal" title="UIKit Logo">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -84,7 +98,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbY-5q-1yy">
-                                <rect key="frame" x="125.5" y="404" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="394" width="163" height="34"/>
                                 <state key="normal" title="SwiftUI logo">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -93,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK2-tN-LJ4">
-                                <rect key="frame" x="125.5" y="446" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="436" width="163" height="34"/>
                                 <state key="normal" title="Logo View Segue">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
@@ -102,12 +116,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTq-Zn-QY2">
-                                <rect key="frame" x="125.5" y="488" width="163" height="34"/>
+                                <rect key="frame" x="125.5" y="478" width="163" height="34"/>
                                 <state key="normal" title="SwiftUI Color Select">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="showSwiftUIColorSelectView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imZ-k1-ccl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1e-Qg-df9">
+                                <rect key="frame" x="125.5" y="520" width="163" height="34"/>
+                                <state key="normal" title="SwiftUI Logo VC">
+                                    <color key="titleColor" systemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLogoSwiftVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKD-mN-HIc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86e-fm-clU">
+                                <rect key="frame" x="125.5" y="552" width="163" height="34"/>
+                                <state key="normal" title="SwiftUI Logo Modal">
+                                    <color key="titleColor" systemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLogoSwiftVCInModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pu-Ao-flG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,17 +149,24 @@
                             <constraint firstItem="O62-fA-8xS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Xh-tS-lGe"/>
                             <constraint firstItem="cK2-tN-LJ4" firstAttribute="centerX" secondItem="WbY-5q-1yy" secondAttribute="centerX" id="3ia-c4-Q5J"/>
                             <constraint firstItem="WbY-5q-1yy" firstAttribute="height" secondItem="UC7-Qw-Gnp" secondAttribute="height" id="8Cy-md-vMy"/>
+                            <constraint firstItem="xnn-af-sOO" firstAttribute="centerY" secondItem="qPs-kb-ycH" secondAttribute="centerY" id="8Gb-IL-XCX"/>
                             <constraint firstItem="vlS-HJ-gze" firstAttribute="height" secondItem="DrW-md-CCh" secondAttribute="height" id="8Ng-GX-Nwu"/>
                             <constraint firstItem="cK2-tN-LJ4" firstAttribute="width" secondItem="WbY-5q-1yy" secondAttribute="width" id="8cq-cv-gex"/>
                             <constraint firstItem="DrW-md-CCh" firstAttribute="leading" secondItem="qPs-kb-ycH" secondAttribute="leading" id="Ayl-qJ-Bs3"/>
+                            <constraint firstItem="S1e-Qg-df9" firstAttribute="centerX" secondItem="fTq-Zn-QY2" secondAttribute="centerX" id="Bjr-gr-nn7"/>
                             <constraint firstItem="fTq-Zn-QY2" firstAttribute="leading" secondItem="cK2-tN-LJ4" secondAttribute="leading" id="CiA-Vo-se4"/>
+                            <constraint firstItem="S1e-Qg-df9" firstAttribute="height" secondItem="fTq-Zn-QY2" secondAttribute="height" id="DqS-DA-koY"/>
+                            <constraint firstItem="86e-fm-clU" firstAttribute="width" secondItem="S1e-Qg-df9" secondAttribute="width" id="FCO-Y4-YBr"/>
                             <constraint firstItem="vlS-HJ-gze" firstAttribute="centerX" secondItem="DrW-md-CCh" secondAttribute="centerX" id="FN0-gY-JYR"/>
                             <constraint firstItem="UC7-Qw-Gnp" firstAttribute="height" secondItem="vlS-HJ-gze" secondAttribute="height" id="FTe-So-Iaj"/>
                             <constraint firstItem="DrW-md-CCh" firstAttribute="centerX" secondItem="qPs-kb-ycH" secondAttribute="centerX" id="H3G-hb-Cvb"/>
                             <constraint firstItem="DrW-md-CCh" firstAttribute="width" secondItem="qPs-kb-ycH" secondAttribute="width" id="JGA-Q2-CYf"/>
+                            <constraint firstItem="mT6-tZ-lQQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JWo-S0-Oxj"/>
+                            <constraint firstItem="86e-fm-clU" firstAttribute="centerX" secondItem="S1e-Qg-df9" secondAttribute="centerX" id="JbT-Ci-fZu"/>
                             <constraint firstItem="fTq-Zn-QY2" firstAttribute="top" secondItem="cK2-tN-LJ4" secondAttribute="bottom" constant="8" symbolic="YES" id="OBa-MB-lSC"/>
                             <constraint firstItem="WbY-5q-1yy" firstAttribute="centerX" secondItem="UC7-Qw-Gnp" secondAttribute="centerX" id="Py0-ty-gUu"/>
                             <constraint firstItem="DrW-md-CCh" firstAttribute="height" secondItem="qPs-kb-ycH" secondAttribute="height" id="QVk-JT-mHF"/>
+                            <constraint firstItem="S1e-Qg-df9" firstAttribute="leading" secondItem="fTq-Zn-QY2" secondAttribute="leading" id="SHp-Vi-cUB"/>
                             <constraint firstItem="cK2-tN-LJ4" firstAttribute="top" secondItem="WbY-5q-1yy" secondAttribute="bottom" constant="8" symbolic="YES" id="TtT-c8-M1M"/>
                             <constraint firstItem="UC7-Qw-Gnp" firstAttribute="centerX" secondItem="vlS-HJ-gze" secondAttribute="centerX" id="U2k-9j-sE8"/>
                             <constraint firstItem="UC7-Qw-Gnp" firstAttribute="top" secondItem="vlS-HJ-gze" secondAttribute="bottom" constant="8" symbolic="YES" id="UDo-xa-f7F"/>
@@ -135,27 +174,43 @@
                             <constraint firstItem="qPs-kb-ycH" firstAttribute="centerX" secondItem="O62-fA-8xS" secondAttribute="centerX" id="Xqx-gE-6Am"/>
                             <constraint firstItem="qPs-kb-ycH" firstAttribute="leading" secondItem="O62-fA-8xS" secondAttribute="leading" id="ZdR-t8-wqw"/>
                             <constraint firstItem="fTq-Zn-QY2" firstAttribute="centerX" secondItem="cK2-tN-LJ4" secondAttribute="centerX" id="Zq1-Er-Awb"/>
+                            <constraint firstItem="86e-fm-clU" firstAttribute="leading" secondItem="S1e-Qg-df9" secondAttribute="leading" id="aQT-jo-2gw"/>
                             <constraint firstItem="UC7-Qw-Gnp" firstAttribute="leading" secondItem="vlS-HJ-gze" secondAttribute="leading" id="d3B-LC-Fii"/>
                             <constraint firstItem="WbY-5q-1yy" firstAttribute="top" secondItem="UC7-Qw-Gnp" secondAttribute="bottom" constant="8" symbolic="YES" id="f4B-iE-l2a"/>
                             <constraint firstItem="qPs-kb-ycH" firstAttribute="width" secondItem="O62-fA-8xS" secondAttribute="width" id="fRD-sy-zxa"/>
+                            <constraint firstItem="qvL-Mp-qNQ" firstAttribute="centerX" secondItem="O62-fA-8xS" secondAttribute="centerX" id="fwR-nL-Ug9"/>
                             <constraint firstItem="DrW-md-CCh" firstAttribute="top" secondItem="qPs-kb-ycH" secondAttribute="bottom" constant="10" id="gIv-na-Zqq"/>
                             <constraint firstItem="UC7-Qw-Gnp" firstAttribute="width" secondItem="vlS-HJ-gze" secondAttribute="width" id="hJK-av-7TO"/>
                             <constraint firstItem="cK2-tN-LJ4" firstAttribute="leading" secondItem="WbY-5q-1yy" secondAttribute="leading" id="kOv-Ke-hs5"/>
                             <constraint firstItem="cK2-tN-LJ4" firstAttribute="height" secondItem="WbY-5q-1yy" secondAttribute="height" id="kQQ-3A-yI0"/>
                             <constraint firstItem="fTq-Zn-QY2" firstAttribute="width" secondItem="cK2-tN-LJ4" secondAttribute="width" id="lX7-RN-OVk"/>
                             <constraint firstItem="vlS-HJ-gze" firstAttribute="width" secondItem="DrW-md-CCh" secondAttribute="width" id="lYa-0C-oPM"/>
+                            <constraint firstItem="xnn-af-sOO" firstAttribute="centerX" secondItem="qPs-kb-ycH" secondAttribute="centerX" id="mh0-TR-m1x"/>
                             <constraint firstItem="vlS-HJ-gze" firstAttribute="top" secondItem="DrW-md-CCh" secondAttribute="bottom" constant="10" id="mog-vd-LZA"/>
                             <constraint firstItem="vlS-HJ-gze" firstAttribute="leading" secondItem="DrW-md-CCh" secondAttribute="leading" id="muc-6b-R1f"/>
                             <constraint firstItem="qPs-kb-ycH" firstAttribute="top" secondItem="O62-fA-8xS" secondAttribute="bottom" constant="10" id="myW-1e-F1G"/>
+                            <constraint firstItem="qvL-Mp-qNQ" firstAttribute="centerY" secondItem="O62-fA-8xS" secondAttribute="centerY" id="nvl-Ja-b8m"/>
                             <constraint firstItem="WbY-5q-1yy" firstAttribute="leading" secondItem="UC7-Qw-Gnp" secondAttribute="leading" id="p7C-66-6c6"/>
-                            <constraint firstItem="O62-fA-8xS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pUr-tw-alq"/>
+                            <constraint firstItem="O62-fA-8xS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="pUr-tw-alq"/>
+                            <constraint firstItem="S1e-Qg-df9" firstAttribute="width" secondItem="fTq-Zn-QY2" secondAttribute="width" id="q4L-NM-73i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mT6-tZ-lQQ" secondAttribute="trailing" constant="10" id="qSe-zK-Y3T"/>
+                            <constraint firstItem="mT6-tZ-lQQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="sAs-h2-7kB"/>
+                            <constraint firstItem="S1e-Qg-df9" firstAttribute="top" secondItem="fTq-Zn-QY2" secondAttribute="bottom" constant="8" symbolic="YES" id="wuf-tB-It0"/>
                             <constraint firstItem="fTq-Zn-QY2" firstAttribute="height" secondItem="cK2-tN-LJ4" secondAttribute="height" id="yq8-V6-Aoy"/>
+                            <constraint firstItem="86e-fm-clU" firstAttribute="top" secondItem="S1e-Qg-df9" secondAttribute="bottom" constant="-2" id="zWG-vj-pFj"/>
+                            <constraint firstItem="86e-fm-clU" firstAttribute="height" secondItem="S1e-Qg-df9" secondAttribute="height" id="zq6-MU-RoQ"/>
                             <constraint firstItem="qPs-kb-ycH" firstAttribute="height" secondItem="O62-fA-8xS" secondAttribute="height" id="zsz-F7-2Sa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Code Challanges" id="N3m-6H-uQl"/>
                     <connections>
+                        <outlet property="asyncClosureActionActivity" destination="xnn-af-sOO" id="QtE-58-LpC"/>
+                        <outlet property="asyncClosureActionButton" destination="qPs-kb-ycH" id="6v0-Vm-Cum"/>
+                        <outlet property="ipClosureActionActivity" destination="qvL-Mp-qNQ" id="DTw-ac-AE7"/>
+                        <outlet property="ipClosureActionButton" destination="O62-fA-8xS" id="kkS-Pa-lbJ"/>
+                        <outlet property="ipLabel" destination="mT6-tZ-lQQ" id="DPv-Am-3q5"/>
                         <segue destination="ZzN-bB-5zj" kind="show" identifier="presentColorSelector" id="AtY-Yv-FYE"/>
+                        <segue destination="jhQ-mh-Rzf" kind="show" identifier="showSwiftUILogoVC" id="w8h-PF-5rn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -229,6 +284,16 @@
             </objects>
             <point key="canvasLocation" x="416" y="873"/>
         </scene>
+        <!--Logo SwiftUI View Controller-->
+        <scene sceneID="GB7-b4-SPw">
+            <objects>
+                <hostingController id="jhQ-mh-Rzf" customClass="LogoSwiftUIViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gl9-KZ-HK2"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPj-iW-tpP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1671" y="925"/>
+        </scene>
         <!--LogoUIK View Controller-->
         <scene sceneID="RJw-AX-Gqn">
             <objects>
@@ -256,6 +321,15 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
