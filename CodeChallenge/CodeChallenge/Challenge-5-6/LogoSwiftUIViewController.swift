@@ -6,7 +6,7 @@
 //  Copyright © 2022 io.freshwork. All rights reserved.
 //
 
-// Code Challenge 6
+// Code Challenge 6: Creating UIHostingController subclass to present SwiftUI view in storyboard segue
 import UIKit
 import SwiftUI
 

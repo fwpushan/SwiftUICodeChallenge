@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Code Challenge 5: Creating ImageView Programmatically using UIKit
+// Code Challenge 5: Creating ImageView Programmatically using UIKit elements and adding auto-layouting constrains programmatically.
 class LogoUIKViewController: UIViewController {
     
     let imageViewTag = 9001

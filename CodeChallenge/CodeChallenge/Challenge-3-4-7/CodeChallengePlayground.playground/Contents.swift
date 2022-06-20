@@ -24,6 +24,7 @@ func withoutSpaceV2(input: String) -> String {
 func withoutSpaceV3(input: String) -> String {
     return String(Array(input).filter { $0 != " "})
 }
+
 let input = "EY is the best place to work."
 let output1 = withoutSpace(input: input)
 let resultIsMatching1 = output1 == "EYisthebestplacetowork."
@@ -32,12 +33,12 @@ let resultIsMatching2 = output2 == "EYisthebestplacetowork."
 let output3 = withoutSpaceV3(input: input)
 let resultIsMatching3 = output3 == "EYisthebestplacetowork."
 
-// Code Challenge 4
+// Code Challenge 4: Transforming array elements
 let inputArray = ["alpha", "beta", "gamma"]
 let outputArray = inputArray.map { $0.uppercased() }
 outputArray
 
-// Code Challenge 7
+// Code Challenge 7: Creating a simple Pub/Sub system
 
 // Event type
 typealias Event = String

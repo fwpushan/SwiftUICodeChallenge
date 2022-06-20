@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// Code Challenge 6: SwiftUI view with image view and dismiss button. Dismiss button action will dismiss the view. 
 struct LogoSwiftViewModal: View {
     var container: UIViewController? = nil;
     var body: some View {

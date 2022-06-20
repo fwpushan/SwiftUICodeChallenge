@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+// Code Challenge 1: A SwiftUI view with Segmented controller picker to select color and change picker tint color with selected color.
+
 enum Colors: String, CaseIterable{
     case red, yellow, green, blue, gray, brown
 

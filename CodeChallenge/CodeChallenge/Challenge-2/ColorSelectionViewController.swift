@@ -8,6 +8,8 @@
 
 import UIKit
 
+// Code Challenge 1: A UIViewController with UISegmentedControl to select color and change UISegmentedControl tint color with selected color.
+
 enum SelectedColor: Int {
     case red = 0, green, blue, brown, yellow, gray
 }
